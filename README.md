@@ -11,3 +11,6 @@
   <img src="https://contrib.rocks/image?repo=GigiClandestino/project_reps" />
 </a>
 
+<a href="https://github.com/DuilioSeghezzi/personal-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DuilioSeghezzi/personal-portfolio" />
+</a>
