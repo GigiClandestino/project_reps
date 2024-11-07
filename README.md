@@ -7,3 +7,7 @@ Simple template to handle a GPOI project in the classroom
 <a href="https://github.com/CICCIOSGAMINO/exide_vasche/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=CICCIOSGAMINO/exide_vasche" />
 </a>
+<a href="https://github.com/GigiClandestino/project_reps/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GigiClandestino/project_reps" />
+</a>
+
