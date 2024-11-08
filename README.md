@@ -1,6 +1,7 @@
  <h1 align="center"> project_reps</h1>
 <div align="center">
      <a  href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348"></a><br>
+ <a href="[https://discord.gg/XTW52Kt](https://discord.gg/bWTznth94D)"><img src="https://img.shields.io/discord/733027681184251937.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
 </div>
 <h2 align="center"> Project to create a website to let people organize themselfs having reps for every type of subject</h2>
 <p>This website is going to be used to create a part of the project who'll be valutated as a Co-Work exercise</p>
