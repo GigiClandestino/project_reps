@@ -15,7 +15,7 @@
 </div>
 
 <h2 > Project to create a website to let people organize themselves having reps for every type of subject</h2>
-<p >This website is going to be used to create a part of the project that'll be evaluated as a Co-Work exercise</p>
+<p >This website is going to be used to create a part of the project that'll be evaluated as a Co-Work exercise, we'll be using Html,Css,Js & Php as mode to create the Site</p>
 
 <h2 align="center"> Contributors</h2>
 <div>
