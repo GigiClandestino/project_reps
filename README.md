@@ -3,6 +3,7 @@
      <a  href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348"></a><br>
 </div>
 <h2 align="center"> Project to create a website to let people organize themselfs having reps for every type of subject</h2>
+<p>This website is going to be used to create a part of the project who'll be valutated as a Co-Work exercise</p>
 <h2 align="center"> Contributors</h2>
 <div>
      <a href="https://github.com/CICCIOSGAMINO/exide_vasche/graphs/contributors">
