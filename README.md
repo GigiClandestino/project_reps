@@ -2,13 +2,13 @@
 
 <div style=align-items: center;">
     <p style="margin-right: 10px;">Interaction</p>
+    <p style="margin-left: 20px; margin-right: 10px;">Ide</p>
     <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors">
         <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348">
     </a>
     <a href="https://discord.gg/bWTznth94D">
         <img src="https://img.shields.io/discord/1195772333382717532?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/>
     </a>
-    <p style="margin-left: 20px; margin-right: 10px;">Ide</p>
     <a href="https://code.visualstudio.com/">
         <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=plastic" alt="Visual Studio Code">
     </a>
