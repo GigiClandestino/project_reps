@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-
-
+## [0.1.0] 08-11-2024
+Created file index.html and started projecting the web site 
 ### Add
 	- Starting adding the project file into the cartel and then looking for problems
