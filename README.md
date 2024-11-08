@@ -1,9 +1,6 @@
 <h1 align="center"> project_reps</h1>
 
 <div style=align-items: center;">
-    <p style="margin-right: 10px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Interaction &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        Ide</p>
     <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors">
         <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348">
     </a>
