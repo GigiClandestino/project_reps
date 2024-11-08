@@ -1,5 +1,5 @@
  <h1 align="center"> project_reps</h1>
- <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348"></a>
+ <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348"></a><br>
 ## Project to create a website to let people organize themselfs having reps for every type of subject
 ###
 ## Contributors
