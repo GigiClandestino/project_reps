@@ -1,4 +1,4 @@
-<h1 align="center"> project_reps</h1>
+<h1 align="center"> Project_reps</h1>
 
 <div align="center">
     <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors">
