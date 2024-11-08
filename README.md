@@ -15,7 +15,7 @@
 </div>
 
 <h2 align="center"> Project to create a website to let people organize themselves having reps for every type of subject</h2>
-<p>This website is going to be used to create a part of the project that'll be evaluated as a Co-Work exercise</p>
+<p align="center">This website is going to be used to create a part of the project that'll be evaluated as a Co-Work exercise</p>
 
 <h2 align="center"> Contributors</h2>
 <div>
