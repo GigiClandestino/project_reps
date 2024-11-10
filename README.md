@@ -2,7 +2,7 @@
 
 <div align="center">
     <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors">
-        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?color=2b9348">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?style=flat&color=rgb(128%2C0%2C128)">
     </a>
     &nbsp
     <a href="https://discord.gg/bWTznth94D">
