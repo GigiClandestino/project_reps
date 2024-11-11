@@ -1,7 +1,7 @@
 <h1 align="center"> Project_reps</h1>
 
 <div align="center">
-    <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors">
+    <a href="https://github.com/GigiClandestino/project_reps/graphs/contributors">
         <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?style=flat&color=rgb(128%2C0%2C128)">
     </a>
     &nbsp
@@ -9,9 +9,7 @@
         <img src="https://img.shields.io/discord/1195772333382717532?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/>
     </a>
     &nbsp
-    <a href="https://code.visualstudio.com/">
-        <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=plastic" alt="Visual Studio Code">
-    </a>
+
 </div>
 
 <h2 > Project to create a website to let people organize themselves having reps for every type of subject</h2>
