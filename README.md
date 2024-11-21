@@ -20,9 +20,6 @@
 
 <h2 align="center"> Contributors</h2>
 <div>
-    <a href="https://github.com/CICCIOSGAMINO/exide_vasche/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=CICCIOSGAMINO/exide_vasche" />
-    </a>
      &nbsp
     <a href="https://github.com/GigiClandestino/project_reps/graphs/contributors">
         <img src="https://contrib.rocks/image?repo=GigiClandestino/project_reps" />
