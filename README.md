@@ -27,6 +27,7 @@
     <a href="https://github.com/DuilioSeghezzi/personal-portfolio/graphs/contributors">
         <img src="https://contrib.rocks/image?repo=DuilioSeghezzi/personal-portfolio" />
     </a>
+     &nbsp
     <a href="https://github.com/Paldo70/gigiTerrone/graphs/contributors">
         <img src="https://contrib.rocks/image?repo=Paldo70/gigiTerrone" />
     </a>
