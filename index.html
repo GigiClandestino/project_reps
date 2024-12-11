@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Tutor Reps</title>
-		<meta charset="utf-8" />
+    <head>
+        <title>Tutor Reps</title>
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
@@ -84,9 +84,10 @@
                 display: block;
                 color: black;
                 text-align: center;
-                padding: 14px 16px;
+                padding: 20px 24px; /* Aumentato il padding */
+                margin-top: 25px;
                 text-decoration: none;
-                font-size: 17px;
+                font-size: 20px; /* Aumentata la dimensione del font */
                 font-weight: 1000;
             }
 
@@ -99,6 +100,7 @@
                 background-color: #2196F3;
                 color: rgba(255, 255, 255, 0);
             }
+            /*Button*/
 
             .flex-container {
                 display: flex;
@@ -141,32 +143,252 @@
             .right-links {
                 float: right; 
             }
+            
+            .searchBox {
+            display: flex;
+            max-width: 230px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            background: #2f3640;
+            border-radius: 50px;
+            position: relative;
+            }
+
+            .searchButton {
+            color: white;
+            position: absolute;
+            right: 8px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            border: 0;
+            display: inline-block;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            }
+            /*hover effect*/
+            button:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+            transform: translateY(-3px);
+            }
+            /*button pressing effect*/
+            button:active {
+            box-shadow: none;
+            transform: translateY(0);
+            }
+
+            .searchInput {
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            padding: 24px 46px 24px 26px;
+            }
+            /*Fuq*/
+            .faq-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+            position: relative;
+            }
+            .faq-button svg {
+            height: 1.5em;
+            fill: white;
+            }
+            .faq-button:hover svg {
+            animation: jello-vertical 0.7s both;
+            }
+            @keyframes jello-vertical {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+            30% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+            40% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+            50% {
+                transform: scale3d(0.85, 1.15, 1);
+            }
+            65% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+            75% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
+            }
+
+            .tooltip {
+            position: absolute;
+            top: -20px;
+            opacity: 0;
+            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.2s;
+            pointer-events: none;
+            letter-spacing: 0.5px;
+            }
+
+            .tooltip::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            background-size: 1000%;
+            background-position: center;
+            transform: rotate(45deg);
+            bottom: -15%;
+            transition-duration: 0.3s;
+            }
+
+            .faq-button:hover .tooltip {
+            top: -40px;
+            opacity: 1;
+            transition-duration: 0.3s;
+            }
+            /*Login*/
+            .Btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+            position: relative;
+            overflow: hidden;
+            transition-duration: .3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+            }
+
+            /* plus sign */
+            .sign {
+            width: 100%;
+            transition-duration: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+            .sign svg {
+            width: 17px;
+            }
+
+            .sign svg path {
+            fill: white;
+            }
+            /* text */
+            .text {
+            position: absolute;
+            right: 0%;
+            width: 0%;
+            opacity: 0;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition-duration: .3s;
+            }
+            /* hover effect on button width */
+            .Btn:hover {
+            width: 125px;
+            border-radius: 40px;
+            transition-duration: .3s;
+            }
+
+            .Btn:hover .sign {
+            width: 30%;
+            transition-duration: .3s;
+            padding-left: 20px;
+            }
+            /* hover effect button's text */
+            .Btn:hover .text {
+            opacity: 1;
+            width: 70%;
+            transition-duration: .3s;
+            padding-right: 10px;
+            }
+            /* button click effect*/
+            .Btn:active {
+            transform: translate(2px ,2px);
+            }
         </style>
-	</head>
-	<body>
+    </head>
+    <body>
         <section>
             <div class="topnav">
                 <a href=""><b>Tutor Reps</b></a>
                 <div class="right-links">
-                    <a href=""><b>Help</b></a>
-                    <a href=""><b>Fuq</b></a>
-                    <a href=""><b>Login</b></a>
+                    <a href="">
+                        <button class="faq-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                              <path
+                                d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                              ></path>
+                            </svg>
+                            <span class="tooltip">FAQ</span>
+                          </button>
+                    </a>
+                    <a href="">
+                        <button class="Btn">
+                        <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                        <div class="text">Login</div>
+                        </button>
+                   </a>
                 </div>
             </div>
             <h1>Ottieni Subito Una Lezione Con Alcuni Dei Nostri Collaboratori</h1>
             <h4>Migliora costantemente con qualcuno che ti aiuta al tuo fianco</h4>
-            <div class="flex-container"> <!-- New flex container -->
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Materie</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href=""> //img src=".gitignore/Diritto.PNG" </a>
-                        <a href=""><img src=""></a>
-                        <a href=""><img src=""></a> 
-                    </div>
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+            <div class="flex-container" style="align-items: center;"> 
+                   <div class="searchBox">
+                    <input class="searchInput" type="text" name="" placeholder="Search something">
+                    <button class="searchButton" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <g clip-path="url(#clip0_2_17)">
+                                <g filter="url(#filter0_d_2_17)">
+                                    <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                    <feOffset dy="4"></feOffset>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+                                </filter>
+                                <clipPath id="clip0_2_17">
+                                    <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>                             
+                    </button>
                 </div>
             </div>
            
@@ -175,24 +397,6 @@
         <section>
 
         </section>
-        <script>
-            function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-            }
-            }
-        </script>
-	</body>
+    </body>
 </html>
+
