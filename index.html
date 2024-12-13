@@ -23,7 +23,7 @@
             }
             /*Dekstop*/
             body{
-                background-image: linear-gradient(to left,lightgreen, lightblue) 
+                 background-image: linear-gradient(to left,lightgreen, lightblue) 
             }
             nav {
             display: block;
@@ -145,6 +145,7 @@
             }
             
             .searchBox {
+            margin-left: 40vw;
             display: flex;
             max-width: 230px;
             align-items: center;
@@ -186,7 +187,8 @@
             outline: none;
             color: white;
             font-size: 15px;
-            padding: 24px 46px 24px 26px;
+            padding: 24px 26px 24px 26px;
+            position:relative ;
             }
             /*Faq*/
             .faq-button {
@@ -276,7 +278,6 @@
             background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
             display: flex;
             align-items: center;
-            justify-content: center;
             cursor: pointer;
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
             position: relative;
@@ -321,8 +322,8 @@
 
             .Btn:hover .sign {
             width: 30%;
-            transition-duration: .3s;
-            padding-left: 20px;
+            transition-duration: .1s;
+            
             }
             /* hover effect button's text */
             .Btn:hover .text {
@@ -401,6 +402,7 @@
             .column {
             float: left;
             width: 33.33%;
+            margin:70px;
             }
 
             /* Clear floats after the columns */
@@ -413,6 +415,59 @@
             section{
                 height:804px;
             }
+            /*Card v2.0*/
+            /* From Uiverse.io by vamsidevendrakumar */ 
+            .card {
+            width: 300px;
+            height: 500px;
+            perspective: 1000px;
+            border-radius: 15px;
+            }
+
+            .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+            }
+
+            .card:hover .card-inner {
+            transform: rotateY(180deg);
+            }
+
+            .card-front,
+            .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            }
+
+            .card-front {
+            background-color: #6A2C70;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border: 10px solid #6A2C70;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(0deg);
+            }
+
+            .card-back {
+            background-color: #F08A5D;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border: 10px solid #F08A5D;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            }
+
             </style>
             </head>
     <body>
@@ -474,28 +529,44 @@
             <br>
             <div class="row">
                     <div class="card column">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
-                        <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                <p>Front Side</p>
+                                </div>
+                                <div class="card-back">
+                                <p>Back Side</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card column">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
-                        <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                <p>Front Side</p>
+                                </div>
+                                <div class="card-back">
+                                <p>Back Side</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card column">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
-                        <div class="card__content">
-                            <p class="card__title">Card Title</p>
-                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                <p>Front Side</p>
+                                </div>
+                                <div class="card-back">
+                                <p>Back Side</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
         </section>
+        <section>
+        </section>
     </body>
 </html>
-
