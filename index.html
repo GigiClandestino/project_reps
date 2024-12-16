@@ -3,501 +3,83 @@
     <head>
         <title>Tutor Reps</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
             /* Mobile */
-            /*Nav/Search Css*/
-            @media screen and (max-width: 600px) {
-                .topnav a, .topnav input[type=text] {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                    width: 100%;
-                    margin: 0;
-                    padding: 14px;
-                }
-                .topnav input[type=text] {
-                    border: 1px solid #ccc;
-                }
-            }
-            /*Dekstop*/
-            body{
-                 background-image: linear-gradient(to left,lightgreen, lightblue) 
-            }
-            nav {
-            display: block;
-            
-            }
-            h1{
-                font-size: 200%;
-            }
-            /*Button Css*/
-            .dropbtn {
-            background-color: #3498DB;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 15px;
+            body {
+
+
             }
 
-            .dropbtn:hover, .dropbtn:focus {
-            background-color: #2980B9;
+            h1 {
+                font-size: 3rem;
             }
 
-            .dropdown {
-            position: relative;
-            display: inline-block;
+            section {
+                height: 100vh;
+                display: grid;
+                place-items: center;
             }
 
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            border-radius: 15px;
-            }
-
-            .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            }
-
-            .dropdown a:hover {background-color: #ddd;}
-
-            .show {display: block;}
-
-            /*Nav/Search Css*/
             .topnav {
-                overflow: hidden;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
             }
 
-            .topnav a {
-                float: left;
-                display: block;
-                color: black;
-                text-align: center;
-                padding: 20px; /* Aumentato il padding */
-                margin-top: 25px;
-                text-decoration: none;
-                font-size: 20px; /* Aumentata la dimensione del font */
-                font-weight: 1000;
+            /* Desktop */
+            @media screen and (min-width: 635px) {
+                
+                .topnav {
+                    top: 3rem;
+                    right: 3rem;
+                }
+
             }
 
-            .topnav a:hover {
-                background-color: #239ca24f;
-                color: black;
-            }
-
-            .topnav a.active {
-                background-color: #2196F3;
-                color: rgba(255, 255, 255, 0);
-            }
-            /*Button*/
-
-            .flex-container {
-                display: flex;
-                align-items: center; 
-                float: right; 
-            }
-
-            .topnav .search-container {
-                margin-left: 10px; 
-            }
-
-            .topnav input[type=text] {
-                padding: 10px; 
-                margin-top: 8px;
-                font-size: 20px; 
-                border: none;
-                width: 300px; 
-            }
-
-            .topnav .search-container button {
-                float: right;
-                padding: 6px 10px;
-                margin-top: 8px;
-                margin-right: 16px;
-                background: #ddd;
-                font-size: 17px;
-                border: none;
-                cursor: pointer;
-            }
-
-            .topnav .search-container button:hover {
-                background: #ccc;
-            }
-
-            .flex-container {
-                display: flex;
-                align-items: center; 
-                float: left; 
-            }
-            .right-links {
-                float: right; 
-            }
-            
-            .searchBox {
-            margin-left: 40vw;
-            display: flex;
-            max-width: 230px;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            background: #2f3640;
-            border-radius: 50px;
-            position: relative;
-            }
-
-            .searchButton {
-            color: white;
-            position: absolute;
-            right: 8px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-            border: 0;
-            display: inline-block;
-            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-            }
-            /*hover effect*/
-            button:hover {
-            color: #fff;
-            background-color: #1A1A1A;
-            box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
-            transform: translateY(-3px);
-            }
-            /*button pressing effect*/
-            button:active {
-            box-shadow: none;
-            transform: translateY(0);
-            }
-
-            .searchInput {
-            border: none;
-            background: none;
-            outline: none;
-            color: white;
-            font-size: 15px;
-            padding: 24px 26px 24px 26px;
-            position:relative ;
-            }
-            /*Faq*/
-            .faq-button {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: none;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
-            position: relative;
-            }
-            .faq-button svg {
-            height: 1.5em;
-            fill: white;
-            }
-            .faq-button:hover svg {
-            animation: jello-vertical 0.7s both;
-            }
-            @keyframes jello-vertical {
-            0% {
-                transform: scale3d(1, 1, 1);
-            }
-            30% {
-                transform: scale3d(0.75, 1.25, 1);
-            }
-            40% {
-                transform: scale3d(1.25, 0.75, 1);
-            }
-            50% {
-                transform: scale3d(0.85, 1.15, 1);
-            }
-            65% {
-                transform: scale3d(1.05, 0.95, 1);
-            }
-            75% {
-                transform: scale3d(0.95, 1.05, 1);
-            }
-            100% {
-                transform: scale3d(1, 1, 1);
-            }
-            }
-
-            .tooltip {
-            position: absolute;
-            top: -20px;
-            opacity: 0;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition-duration: 0.2s;
-            pointer-events: none;
-            letter-spacing: 0.5px;
-            }
-
-            .tooltip::before {
-            position: absolute;
-            content: "";
-            width: 10px;
-            height: 10px;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-            background-size: 1000%;
-            background-position: center;
-            transform: rotate(45deg);
-            bottom: -15%;
-            transition-duration: 0.3s;
-            }
-
-            .faq-button:hover .tooltip {
-            top: -40px;
-            opacity: 1;
-            transition-duration: 0.3s;
-            }
-            /*Login*/
-            .Btn {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: none;
-            background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
-            position: relative;
-            overflow: hidden;
-            transition-duration: .3s;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-            }
-
-            /* plus sign */
-            .sign {
-            width: 100%;
-            transition-duration: .3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-
-            .sign svg {
-            width: 17px;
-            }
-
-            .sign svg path {
-            fill: white;
-            }
-            /* text */
-            .text {
-            position: absolute;
-            right: 0%;
-            width: 0%;
-            opacity: 0;
-            color: white;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition-duration: .3s;
-            }
-            /* hover effect on button width */
-            .Btn:hover {
-            width: 125px;
-            border-radius: 40px;
-            transition-duration: .3s;
-            }
-
-            .Btn:hover .sign {
-            width: 30%;
-            transition-duration: .1s;
-            
-            }
-            /* hover effect button's text */
-            .Btn:hover .text {
-            opacity: 1;
-            width: 70%;
-            transition-duration: .3s;
-            padding-right: 10px;
-            }
-            /* button click effect*/
-            .Btn:active {
-            transform: translate(2px ,2px);
-            }
-            /*Card*/
-            .card {
-            position: relative;
-            width: 300px;
-            height: 500px;
-            background-color: #f2f2f2;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            perspective: 1000px;
-            box-shadow: 0 0 0 5px #ffffff80;
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            }
-
-            .card svg {
-            width: 48px;
-            fill: #333;
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            }
-
-            .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-            }
-
-            .card__content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #f2f2f2;
-            transform: rotateX(-90deg);
-            transform-origin: bottom;
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            }
-
-            .card:hover .card__content {
-            transform: rotateX(0deg);
-            }
-
-            .card__title {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-            font-weight: 700;
-            }
-
-            .card:hover svg {
-            scale: 0;
-            }
-
-            .card__description {
-            margin: 10px 0 0;
-            font-size: 14px;
-            color: #777;
-            line-height: 1.4;
-            }
-            /*Colonne*/
-            .column {
-            float: left;
-            width: 33.33%;
-            margin:70px;
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
-            /*Section*/
-            section{
-                height:804px;
-            }
-            /*Card v2.0*/
-            /* From Uiverse.io by vamsidevendrakumar */ 
-            .card {
-            width: 300px;
-            height: 500px;
-            perspective: 1000px;
-            border-radius: 15px;
-            }
-
-            .card-inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.999s;
-            }
-
-            .card:hover .card-inner {
-            transform: rotateY(180deg);
-            }
-
-            .card-front,
-            .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            }
-
-            .card-front {
-            background-color: #6A2C70;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            border: 10px solid #6A2C70;
-            border-radius: 10px;
-            justify-content: center;
-            font-size: 24px;
-            transform: rotateY(0deg);
-            }
-
-            .card-back {
-            background-color: #F08A5D;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            border: 10px solid #F08A5D;
-            border-radius: 10px;
-            justify-content: center;
-            font-size: 24px;
-            transform: rotateY(180deg);
-            }
-
-            </style>
-            </head>
+        </style>
+    </head>
     <body>
-        <section>
-            <div class="topnav">
-                <a href=""><b>Tutor Reps</b></a>
-                <div class="right-links">
-                    <a href="">
-                        <button class="faq-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                              <path
-                                d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
-                              ></path>
-                            </svg>
-                            <span class="tooltip">FAQ</span>
-                          </button>
-                    </a>
-                    <a href="">
-                        <button class="Btn">
-                        <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-                        <div class="text">Login</div>
-                        </button>
-                   </a>
-                </div>
+
+        <div class="topnav">
+            <div class="right-links">
+                <a href="">
+                    <button class="faq-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                          <path
+                            d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                          ></path>
+                        </svg>
+                        <span class="tooltip">FAQ</span>
+                      </button>
+                </a>
+                <a href="">
+                    <button class="Btn">
+                    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                    <div class="text">Login</div>
+                    </button>
+               </a>
             </div>
-            <h1>Ottieni Subito Una Lezione Con Alcuni Dei Nostri Collaboratori</h1>
-            <h4>Migliora costantemente con qualcuno che ti aiuta al tuo fianco</h4>
-            <div class="flex-container" style="align-items: center;"> 
-                   <div class="searchBox">
-                    <input class="searchInput" type="text" name="" placeholder="Search something">
+        </div>
+
+        <section>
+
+            <div>
+
+                <h1>Ottieni Subito Una Lezione Con Alcuni Dei Nostri Collaboratori</h1>
+                <h4>Migliora costantemente con qualcuno che ti aiuta al tuo fianco</h4>
+
+                <div class="searchBox">
+                    <input class="searchInput" type="text" name="" placeholder="Search something"/>
                     <button class="searchButton" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                             <g clip-path="url(#clip0_2_17)">
@@ -525,8 +107,8 @@
                 </div>
             </div>
         </section>
+
         <section>
-            <br>
             <div class="row">
                     <div class="card column">
                         <div class="card">
@@ -566,7 +148,6 @@
                     </div>
             </div>
         </section>
-        <section>
-        </section>
+
     </body>
 </html>
