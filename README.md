@@ -2,7 +2,7 @@ Project Reps
 ============
 [TOC]
 
-v0.3.0 - 19-12-2024
+v0.3.1 - 15-01-2025
 
 <h1 align="center"> Project_reps</h1>
 

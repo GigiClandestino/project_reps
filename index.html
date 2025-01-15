@@ -67,12 +67,14 @@
             }
 
             .card {
-                min-width: 301px;
-                min-height: 201px;
-                max-width: 603px;
-                max-height: 301px;
+                min-width: 400px;
+                min-height: 301px;
                 border: 2px solid var(--my-color);
                 border-radius: 7px; 
+            }
+
+            .card-txt {
+                text-align: center;
             }
 
             #intro {
@@ -188,15 +190,21 @@
         <section>
 
             <div class="row">
-                <div class="card dark">
-                    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-                    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-                </div>
                 <div class="card">
-                    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-                    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+                    <img src="https://placehold.co/400x200" alt="placeholder">
+                    <div class="card-txt">
+                        <h2>Card Title</h2>
+                        <p>Card Description</p>
+                    </div>
                 </div>
-                <div class="card dark"></div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200" alt="placeholder">
+                </div>
+
+                <div class="card dark">
+                    <img src="https://placehold.co/400x200" alt="placeholder">
+                </div>
             </div>
 
         </section>
@@ -209,7 +217,7 @@
 
             document.addEventListener('DOMContentLoaded', () => {
 
-                const version = '0.3.0'
+                const version = '0.3.1'
                 console.log(`@APP v${version}`)
 
                 const btns = document.querySelectorAll('.topnav button')
