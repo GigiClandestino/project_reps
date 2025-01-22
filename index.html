@@ -9,7 +9,7 @@
 
             :root{
                 
-                --my-color: crimson;
+                --my-color: rgb(0, 166, 255);
                 --bk-color-dark:black;
                 --bk-color-light:whitesmoke;
                 --txt-color-dark:black;
@@ -41,7 +41,7 @@
             }
 
             svg {
-                fill: whitesmoke;
+                fill:var(--txt-color-light);
             }
 
             .topnav {
@@ -96,8 +96,17 @@
             .dark {
                 background-color: var(--bk-color-dark);
                 color:var(--txt-color-light);
-                
-                
+                .topnav button {
+                    border: var(--txt-color-light);
+                }              
+            }
+
+            .light{
+                background-color: var(--bk-color-light);
+                color:var(--txt-color-dark);
+                .topnav button {
+                    border: var(--txt-color-dark);
+                } 
             }
 
             /* Desktop */
@@ -159,8 +168,8 @@
                 </svg>
             </button>
             <button title="change">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" >
-                   <rect width="25" height="25" fill="crimson"></rect>
+                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 488.85 488.85">
+                  <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2 s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025 c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3 C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7 c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"></path> ù
                 </svg>
             </button>
         </div>
@@ -174,54 +183,34 @@
             </div>
         </section>
 
-
-        <!-- 
-        <div class="searchBox">
-                    <input class="searchInput" type="text" name="" placeholder="Search something"/>
-                    <button class="searchButton" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                            <g clip-path="url(#clip0_2_17)">
-                                <g filter="url(#filter0_d_2_17)">
-                                    <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
-                                </g>
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                    <feOffset dy="4"></feOffset>
-                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-                                </filter>
-                                <clipPath id="clip0_2_17">
-                                    <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-                                </clipPath>
-                            </defs>
-                        </svg>                             
-                    </button>
-                </div>
-        -->
-
-        <section>
+        <section class="light">
 
             <div class="row">
                 <div class="card">
                     <img src="https://placehold.co/400x200" alt="placeholder">
                     <div class="card-txt">
-                        <h2>Card Title</h2>
-                        <p>Card Description</p>
+                        <h2>Pasini Lorenzo</h2>
+                        <p>Materia : Matematica<br>
+                        Prezzo : 15€</p>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card dark ">
                     <img src="https://placehold.co/400x200" alt="placeholder">
+                    <div class="card-txt">
+                        <h2>Aliprandi Luigi</h2>
+                            <p>Materia : Informatica<br>
+                            Prezzo : 12€</p>
+                        </div>
                 </div>
 
-                <div class="card dark">
+                <div class="card ">
+                    <div class="card-txt">
                     <img src="https://placehold.co/400x200" alt="placeholder">
+                        <h2>Seghezzi Duilio</h2>
+                            <p>Materia : Italiano<br>
+                            Prezzo : 10€</p>
+                    </div>
                 </div>
             </div>
 
@@ -246,8 +235,7 @@
 
                         if(btn.title === 'change'){
                             const section = document.querySelector('section')
-                            section.classList.toggle('dark')
-                              
+                            section.classList.toggle('dark') 
                         }
                     })
                 })
