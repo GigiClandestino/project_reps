@@ -7,9 +7,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
 
-            * {
+            :root{
+                
                 --my-color: crimson;
+                --bk-color-dark:black;
+                --bk-color-light:whitesmoke;
+                --txt-color-dark:black;
+                --txt-color-light:whitesmoke;
 
+            }
+
+            * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
@@ -27,6 +35,9 @@
                 height: 100vh;
                 display: grid;
                 place-items: center;
+                
+                background-color: var(--bk-color-light);
+                
             }
 
             svg {
@@ -46,7 +57,7 @@
                 height: 4.1rem;
                 border: none;
                 background-color: transparent;
-                border: 1px solid whitesmoke;
+                border: 1px solid var(--txt-color-light);
                 border-radius: 50%;
             }
 
@@ -78,13 +89,15 @@
             }
 
             #intro {
-                color: whitesmoke;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 75px;
             }
 
             .dark {
-                background-color: #000;
+                background-color: var(--bk-color-dark);
+                color:var(--txt-color-light);
+                
+                
             }
 
             /* Desktop */
@@ -143,6 +156,11 @@
             <button title="login">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M478.09-111.87v-91h279.04v-554.26H478.09v-91h279.04q37.78 0 64.39 26.61t26.61 64.39v554.26q0 37.78-26.61 64.39t-64.39 26.61H478.09Zm-87.42-156.65-62.89-65.41L428.35-434.5H111.87v-91h316.48L327.78-626.07l62.89-65.41L601.91-480 390.67-268.52Z"/>
+                </svg>
+            </button>
+            <button title="change">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" >
+                   <rect width="25" height="25" fill="crimson"></rect>
                 </svg>
             </button>
         </div>
@@ -225,8 +243,17 @@
                 btns.forEach(btn => {
                     btn.addEventListener('click', () => {
                         console.log('clicked')
+
+                        if(btn.title === 'change'){
+                            const section = document.querySelector('section')
+                            section.classList.toggle('dark')
+                              
+                        }
                     })
                 })
+
+
+                
             })
         </script>
 
