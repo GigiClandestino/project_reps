@@ -26,7 +26,7 @@
 
             /* Mobile */
             body {
-
+               
 
             }
 
@@ -57,10 +57,9 @@
                 height: 4.1rem;
                 border: none;
                 background-color: transparent;
-                border: 1px solid var(--txt-color-light);
+                border: 1px solid var(--txt-color-light); 
                 border-radius: 50%;
             }
-
             .topnav button:hover {
                 cursor: pointer;
                 border-color: var(--my-color);
@@ -97,16 +96,18 @@
                 background-color: var(--bk-color-dark);
                 color:var(--txt-color-light);
                 .topnav button {
-                    border: var(--txt-color-light);
-                }              
+                    background-color:red ;
+                    border: 1px solid var(--txt-color-light);
+                    }              
             }
 
             .light{
                 background-color: var(--bk-color-light);
                 color:var(--txt-color-dark);
                 .topnav button {
-                    border: var(--txt-color-dark);
-                } 
+                    background-color:blue ;
+                    border: 1px solid var(--txt-color-dark);
+                }
             }
 
             /* Desktop */
@@ -217,14 +218,15 @@
         </section>
 
         <section class="dark">
-
+            <h1>What do we do ?</h1>
+            <p>Il Nostro Obbiettivo è Lo Sviluppo Di Un Sito Che Semplifichi Alle Persone </p>
         </section>
 
         <script>
 
             document.addEventListener('DOMContentLoaded', () => {
 
-                const version = '0.3.1'
+                const version = '0.3.4'
                 console.log(`@APP v${version}`)
 
                 const btns = document.querySelectorAll('.topnav button')
@@ -234,8 +236,11 @@
                         console.log('clicked')
 
                         if(btn.title === 'change'){
-                            const section = document.querySelector('section')
-                            section.classList.toggle('dark') 
+                            const sections = document.querySelectorAll('section')
+                            sections.forEach(s => {
+                                s.classList.toggle('dark')
+                                s.classList.toggle('light')
+                            })
                         }
                     })
                 })

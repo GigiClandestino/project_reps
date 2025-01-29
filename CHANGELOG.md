@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.3.3] 22-01-2025
+## [0.3.4] 29-01-2025
 
 ### Changed
 	- Modified the svg added some Properties to CSS and tried to modify the script
