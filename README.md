@@ -1,10 +1,5 @@
-Project Reps
-============
-
-V 0.3.4 - 29-01-2025
-
 <h1 align="center"> Project_reps</h1>
-
+<h2 align=""Center>V 0.3.4 - 29-01-2025</h2>
 <div align="center">
     <a href="https://github.com/GigiClandestino/project_reps/graphs/contributors">
         <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?style=flat&color=rgb(128%2C0%2C128)">
