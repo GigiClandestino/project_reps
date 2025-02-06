@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 06/02/2025
+
+### Changed
+	- fix the togle theme button bug [issue #1]
+
 ## [0.3.4] 29-01-2025
 
 ### Changed

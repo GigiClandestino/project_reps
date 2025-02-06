@@ -9,11 +9,9 @@
 
             :root{
                 
-                --my-color: rgb(0, 166, 255);
-                --bk-color-dark:black;
-                --bk-color-light:whitesmoke;
-                --txt-color-dark:black;
-                --txt-color-light:whitesmoke;
+                --my-color: crimson;
+                --bk-color: #fff;
+                --txt-color: #111;
 
             }
 
@@ -36,12 +34,12 @@
                 display: grid;
                 place-items: center;
                 
-                background-color: var(--bk-color-light);
+                background-color: var(--bk-color);
                 
             }
 
             svg {
-                fill:var(--txt-color-light);
+                fill: var(--txt-color);
             }
 
             .topnav {
@@ -55,11 +53,10 @@
                 padding: 1rem;
                 width: 4.1rem;
                 height: 4.1rem;
-                border: none;
-                background-color: transparent;
-                border: 1px solid var(--txt-color-light); 
+                background-color: transparent; 
                 border-radius: 50%;
             }
+
             .topnav button:hover {
                 cursor: pointer;
                 border-color: var(--my-color);
@@ -93,22 +90,20 @@
             }
 
             .dark {
-                background-color: var(--bk-color-dark);
-                color:var(--txt-color-light);
-                .topnav button {
-                    background-color:red ;
-                    border: 1px solid var(--txt-color-light);
-                    }              
+                background-color: var(--txt-color);
+                color: var(--bk-color);
             }
 
-            .light{
-                background-color: var(--bk-color-light);
-                color:var(--txt-color-dark);
-                .topnav button {
-                    background-color:blue ;
-                    border: 1px solid var(--txt-color-dark);
+            .dark-btn {
+                background-color: transparent;
+                color: var(--bk-color);
+                border: 1px solid var(--bk-color);
+
+                > svg {
+                    fill: var(--bk-color);
                 }
             }
+
 
             /* Desktop */
             @media screen and (min-width: 635px) {
@@ -151,24 +146,22 @@
                 }
             }
 
-
-
         </style>
     </head>
     <body>
 
         <div class="topnav">
-            <button title="help">
+            <button class="dark-btn" title="help">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M420.17-321.2q0-85.78 15.82-124.15 15.81-38.37 63.53-78.93 40.05-33.61 60.35-59.39 20.3-25.79 20.3-59.31 0-38.85-26.18-64.53-26.19-25.69-71.84-25.69-48.85 0-75.82 29.93-26.98 29.92-38.22 64.79l-114.48-48.78q22.67-69.02 81.3-117.58 58.64-48.55 147.22-48.55 107.87 0 165.93 60.65 58.05 60.65 58.05 146 0 53.83-21.5 91.36t-67.98 81.58q-48.04 44.84-58.78 69.46-10.74 24.62-10.74 83.14H420.17Zm61.98 250.29q-36.11 0-61.64-25.54-25.53-25.53-25.53-61.64t25.53-61.76q25.53-25.65 61.64-25.65t61.76 25.65q25.66 25.65 25.66 61.76t-25.66 61.64q-25.65 25.54-61.76 25.54Z"/>
                 </svg>
             </button>
-            <button title="login">
+            <button class="dark-btn" title="login">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M478.09-111.87v-91h279.04v-554.26H478.09v-91h279.04q37.78 0 64.39 26.61t26.61 64.39v554.26q0 37.78-26.61 64.39t-64.39 26.61H478.09Zm-87.42-156.65-62.89-65.41L428.35-434.5H111.87v-91h316.48L327.78-626.07l62.89-65.41L601.91-480 390.67-268.52Z"/>
                 </svg>
             </button>
-            <button title="change">
+            <button class="dark-btn" title="change">
                  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 488.85 488.85">
                   <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2 s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025 c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3 C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7 c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"></path> ù
                 </svg>
@@ -184,7 +177,7 @@
             </div>
         </section>
 
-        <section class="light">
+        <section>
 
             <div class="row">
                 <div class="card">
@@ -196,7 +189,7 @@
                     </div>
                 </div>
 
-                <div class="card dark ">
+                <div class="card">
                     <img src="https://placehold.co/400x200" alt="placeholder">
                     <div class="card-txt">
                         <h2>Aliprandi Luigi</h2>
@@ -226,25 +219,26 @@
 
             document.addEventListener('DOMContentLoaded', () => {
 
-                const version = '0.3.4'
+                const version = '0.4.0'
                 console.log(`@APP v${version}`)
 
-                const btns = document.querySelectorAll('.topnav button')
+                const btnStyle = document.querySelector('[title="change"]')
 
-                btns.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        console.log('clicked')
+                btnStyle.addEventListener('click', () => {
+                    console.log('@CLICK >> Style')
 
-                        if(btn.title === 'change'){
-                            const sections = document.querySelectorAll('section')
-                            sections.forEach(s => {
-                                s.classList.toggle('dark')
-                                s.classList.toggle('light')
-                            })
-                        }
+                    const sections = document.querySelectorAll('section')
+                    const buttons = document.querySelectorAll('button')
+
+                    sections.forEach(section => {
+                        section.classList.toggle('dark')
                     })
-                })
 
+                    buttons.forEach(button => {
+                        button.classList.toggle('dark-btn')
+                    })
+
+                })
 
                 
             })
