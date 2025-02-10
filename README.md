@@ -1,5 +1,5 @@
 <h1 align="center"> Project_reps</h1>
-<h2 align=""Center>V 0.4.0 - 06-02-2025</h2>
+<h2 align=""Center>V 0.4.1 - 10-02-2025</h2>
 <div align="center">
     <a href="https://github.com/GigiClandestino/project_reps/graphs/contributors">
         <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GigiClandestino/project_reps?style=flat&color=rgb(128%2C0%2C128)">
