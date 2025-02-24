@@ -6,17 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.4.2] - 10/02/2025
+## [0.5.0] 24-02-25
+
+## [0.4.2] 10-02-2025
 
 ### Changed
 	- modified section login
 
-## [0.4.1] - 10/02/2025
+## [0.4.1] 10-02-2025
 
 ### Add
 	- section login
 
-## [0.4.0] - 06/02/2025
+## [0.4.0] 06-02-2025
 
 ### Changed
 	- fix the togle theme button bug [issue #1]

@@ -12,6 +12,7 @@
                 --my-color: purple;
                 --bk-color: #fff;
                 --txt-color: #111;
+                --active-color: greenyellow;
 
             }
 
@@ -24,8 +25,12 @@
 
             /* Mobile */
             body {
-               
+                min-block-size: 100vh;
 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.9rem;
+                /* WCAG no less than 1.5 dyslexic */
+                line-height: 1.5;
             }
 
             section {
@@ -41,43 +46,8 @@
                 fill: var(--txt-color);
             }
 
-            form {
-                gap:5%;
-                width: 37vw;
-                height: 85vh;
-                background-color: lightblue;
-                font-size: 140%;
-
-            }
-
-            input {
-                margin: 1rem;
-                padding: 1rem;
-                width: 85%;
-                border-radius: 15px;
-            }
-
-            [type="checkbox"]{
-                border-radius: 15px;
-                width: 2vw;
-                height: 2vh;
-                place-items:center;
-            }
-
-            [type="submit"] {
-                border-radius: 15px;
-                width: 6vw;
-                height: 6vh;
-                place-items:center;
-                font-size: 25px;
-            }
-
-            [type="reset"] {
-                border-radius: 15px;
-                width: 6vw;
-                height: 6vh;
-                place-items:center;
-                font-size: 25px;
+            h1{
+                font-size:2.1rem;
             }
 
             .topnav {
@@ -130,17 +100,178 @@
             }
 
             #intro {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 75px;
             }
 
             #login-img {
                 width: 100%;
                 height: 100%;
-                background-image: url('./static/login.png');
+                background-image: url('./static/img/login.png');
                 border-radius: 0 0 70px 0;
                 background-position: center;
                 background-size: cover;
+            }
+
+            #login-form {
+                padding: 3rem;
+                display: grid;
+                place-items: center;
+                gap: 1rem;
+            }
+
+            input {
+                border: none;
+                padding: 1rem;
+                width: 100%;
+                border-radius: 15px;
+
+                color: whitesmoke;
+                outline: 1px solid whitesmoke;
+                border-color: whitesmoke;
+                background-color: transparent;
+            }
+
+            input:focus {
+                outline: 3px solid var(--active-color);
+            }
+
+            /* ----------------------- field container --------------------  */
+            .field-container {
+                position: relative;
+                width: 85%;
+            }
+
+            .field-container input {
+                /* padding left due to icon */
+                padding-left: 51px;
+            }
+
+            .field-container img {
+                width: 25px;
+                height: 25px;
+
+                position: absolute;
+                bottom: 11px;
+                left: 11px;
+            }
+
+            /* ------------------------------ label ------------------------------ */
+            label {
+                font-size: 15px;
+                position: absolute;
+                top: 19px;
+                left: 45px;
+                transition: top .2s ease-in-out, font-size .2s ease-in-out;
+            }
+
+            label.active {
+                padding: .5rem;
+                top: -13px;
+                background-color: var(--txt-color);
+                color: var(--active-color);
+
+                font-size: 13px;
+                /* text-transform: uppercase; */
+            }
+
+            /* ---------------------------- valid / invalid ---------------------- */
+            /* handle invalid field when not :focus
+                (set the placeholder " " on input field) */
+            input:not(:focus):not(:placeholder-shown):invalid {
+                background-color: var(--txt-color);
+                outline: 3px solid crimson;
+                color: crimson;
+                font-size: 13px;
+            }
+
+            /* handle the label of not :focus invalid label's input */
+            input:not(:focus):not(:placeholder-shown):invalid + label {
+                background-color: var(--txt-color);
+                color: crimson;
+                font-size: 13px;
+            }
+
+            /* label - stay high when field completed */
+            input:not(:focus):valid ~ label {
+                padding: .5rem;
+                top: -13px;
+                background-color: var(--txt-color);
+                font-size: 13px;
+            }
+
+            /* label - red label stay in place */
+            input:not(:focus):not(:placeholder-shown):invalid ~ label {
+                padding: .5rem;
+                top: -13px;
+                background-color: var(--txt-color);
+                color: crimson;
+                font-size: 13px;
+            }
+
+            #eye-icons-container {
+                width: 33px;
+                height: 33px;
+
+                position: absolute;
+                bottom: 7px;
+                right: 7px;
+
+            }
+
+            #email {
+
+                /* background: purple; */
+            }
+
+            .eye-btn {
+                padding: 0;
+                margin: 0;
+                width: 33px;
+                height: 33px;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .eye-btn:focus {
+                outline: 1px solid var(--text-color);
+            }
+
+            .eye-btn svg {
+                width: 100%;
+                height: 100%;
+                fill: whitesmoke;
+            }
+
+            #remember {
+                outline: none;
+                background-color: gold;
+            }
+
+            #remember-label {
+                position: absolute;
+                top: 11px;
+                left: -4px;
+            }
+
+            .form-btn {
+                padding: .7rem 1.5rem;
+                border: none;
+                outline: 1px solid whitesmoke;
+                border-radius: 15px;
+                background-color: transparent;
+                color: var(--bk-color);
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .form-btn:hover,
+            .form-btn:active,
+            .form-btn:focus {
+                border: none;
+                outline: 3px solid var(--active-color);
+                color: var(--active-color);
             }
 
             .dark {
@@ -158,6 +289,10 @@
                 }
             }
 
+            .header {
+                margin-bottom: 1.7rem;
+            }
+
 
             /* Desktop */
             @media screen and (min-width: 635px) {
@@ -166,10 +301,6 @@
                     top: 3rem;
                     right: 3rem;
                     
-                }
-
-                h1{
-                    font-size:3rem;
                 }
 
                 section{
@@ -237,39 +368,74 @@
         </section>
 
         <!-- login -->
-        <section class="row2">
+        <section class="row2 dark">
 
             <div id="login-img" class="dark"></div>
 
-            <div>
-                <form id="login-form">
-                    <h1>Registrazione Utente</h1>
-                    <div>
-                        <label for="username">Username</label>
-                        <input id="username" type="text" placeholder="Username">
-                    </div>
+            <form id="login-form">
+                <h1 class="header">Registrazione</h1>
+                <div class="field-container">
+                    <input
+                        id="username"
+                        type="text"
+                        placeholder=" "
+                        required />
+                    <label for="username">Username</label>
+                    <img src="static/img/person_24dp.png" alt="Password" />
+                </div>
 
-                    <div>
-                        <label for="e-mail">E-Mail</label>
-                        <input id="e-mail" type="mail" placeholder="E-Mail">
-                    </div>
+                <div class="field-container">
                     
-                    <div>
-                        <label for="password">Password</label>
-                        <input id="password" type="password" placeholder="Password">
-                    </div>
-                    
-                    <div>
-                        <label for="Rememeber">Rememeber Me</label>
-                        <input type="checkbox" id="Rememeber" placeholder="Rememeber">
-                    </div>
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder=" "
+                        required />
+                    <label for="email">E-Mail</label>
+                    <img src="static/img/mail_24dp.png" alt="Password" />
+                </div>
+                
+                <div class="field-container">
+                    <input
+                        id="password"
+                        type="password"
+                        size="37"
+                        name="password"
+                        placeholder=" "
+                        required />
+                    <label for="password">Password</label>
 
-                    <div class="row2">
-                        <button type="submit">Login</button>
-                        <button type="reset">Reset</button>
+                    <img src="static/img/password_24dp.png" alt="Password" />
+
+                    <div id="eye-icons-container">
+
+                        <button id="eye-closed" class="eye-btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <title>Eye Closed</title>
+                                <path d="M617.846-454.154 586-486q9-52.385-29.692-90.692Q517.615-615 466-606l-31.846-31.846q10.077-4.154 21.038-6.231 10.962-2.077 24.808-2.077 61.154 0 103.654 42.5 42.5 42.5 42.5 103.654 0 13.846-2.077 25.577-2.077 11.731-6.231 20.269Zm126.462 122.923L714-358q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-31.231-31.231q34.846-13.154 70.923-18.962Q443.769-760 480-760q130.231 0 238.231 71.577T876.923-500q-21.461 48.231-54.346 90.654-32.884 42.423-78.269 78.115Zm44.615 216.77L633.231-269.692q-26.539 11.769-65.885 20.731Q528-240 480-240q-131 0-238.231-71.577T83.077-500q23.307-53 61.461-99.269 38.154-46.269 81.462-77.654l-111.539-112 28.308-28.308 674.462 674.462-28.308 28.308ZM254.307-648.615Q219.923-624.154 184-584.308 148.077-544.461 128-500q50 101 143.5 160.5T480-280q34.615 0 69.769-6.731 35.154-6.73 52.846-13.577L537.385-366q-9.462 5.308-26.385 8.731-16.923 3.423-31 3.423-61.154 0-103.654-42.5-42.5-42.5-42.5-103.654 0-13.308 3.423-29.846 3.423-16.539 8.731-27.539l-91.693-91.23ZM541-531Zm-112.539 56.539Z"/>
+                            </svg>
+                        </button>
+
+                        <button id="eye-opened" class="eye-btn" type="button" hidden>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <title>Eye Opened</title>
+                                <path d="M480.181-353.846q60.973 0 103.473-42.681t42.5-103.654q0-60.973-42.681-103.473t-103.654-42.5q-60.973 0-103.473 42.681t-42.5 103.654q0 60.973 42.681 103.473t103.654 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.956 0-236.879-70.731Q136.307-381.461 83.077-500q53.23-118.539 160.044-189.269Q349.934-760 479.89-760q129.956 0 236.879 70.731Q823.693-618.539 876.923-500q-53.23 118.539-160.044 189.269Q610.066-240 480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/>
+                            </svg>
+                        </button>
+
                     </div>
-                </form>
-            </div>
+                </div>
+                
+                <div class="field-container header">
+                    <input type="checkbox" id="remember" placeholder=" ">
+                    <label id="remember-label" for="remember">Rememeber Me</label>
+                </div>
+
+                <div class="row2">
+                    <button class="form-btn" type="submit">Login</button>
+                    <button class="form-btn"  type="reset">Reset</button>
+                </div>
+            </form>
 
         </section>
 
@@ -318,11 +484,12 @@
 
             document.addEventListener('DOMContentLoaded', () => {
 
-                const version = '0.4.1'
+                // WebApp version
+                const version = '0.5.0'
                 console.log(`@APP v${version}`)
 
+                // Style Btn
                 const btnStyle = document.querySelector('[title="change"]')
-
                 btnStyle.addEventListener('click', () => {
                     console.log('@CLICK >> Style')
 
@@ -339,6 +506,42 @@
 
                 })
 
+                // Form actions
+                const inputs = document.querySelectorAll('input')
+
+                inputs.forEach((i) => {
+                    i.addEventListener('focusin', (event) => {
+                        // label need to be defined just next input
+                        event.target.nextElementSibling.classList.add('active')
+                    })
+
+                    i.addEventListener('focusout', (event) => {
+                        // label need to be defined just next input
+                        event.target.nextElementSibling.classList.remove('active')
+                    })
+                })
+
+                // show / hide password
+                const eyeClosed = document.getElementById('eye-closed')
+                const eyeOpened = document.getElementById('eye-opened')
+
+                eyeClosed.addEventListener('click', (e) => {
+
+                eyeClosed.setAttribute('hidden', '')
+                eyeOpened.removeAttribute('hidden')
+
+                const password = document.getElementById('password')
+                password.type = 'text'
+                })
+
+                eyeOpened.addEventListener('click', (e) => {
+
+                eyeOpened.setAttribute('hidden', '')
+                eyeClosed.removeAttribute('hidden')
+
+                const password = document.getElementById('password')
+                password.type = 'password'
+                })
                 
             })
         </script>
