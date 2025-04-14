@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.2] 14-04-25
+
+### Added
+
+	-Added images in home
+
 ## [0.5.1] 24-02-25
 
 ### Changed

@@ -41,7 +41,7 @@
                 background-color: var(--bk-color);
                 
             }
-
+            
             svg {
                 fill: var(--txt-color);
             }
@@ -84,8 +84,8 @@
             .row2 {
                 display: grid;
                 place-items: center;
-                grid-template-rows: 1fr 1fr;
-                gap: 1rem;
+                grid-template-rows: 1fr 1fr; 
+
             }
 
             .card {
@@ -292,8 +292,35 @@
             .header {
                 margin-bottom: 1.7rem;
             }
+            
+            .img-bk{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                
 
+            }
 
+            #img-bk1{
+                background-image: url('./static/img/img-bk1.jpg');
+            }
+
+            #img-bk2{
+                background-image: url('./static/img/img-bk2.jpg');
+            }
+
+            #img-bk3{
+                background-image: url('./static/img/img-bk2.jpg');
+            }
+
+            #img-bk4{
+                background-image: url('./static/img/img-bk1.jpg');
+            }
+
+            .box-txt{
+                padding:1.5rem;
+            }
             /* Desktop */
             @media screen and (min-width: 635px) {
                 
@@ -310,13 +337,13 @@
                 }
 
                 .row3 {
-                    width: 95%;
+                    width:95%;
                     grid-template-rows: auto auto;
                     grid-template-columns: auto auto;
                 }
 
                 .row2 {
-                    grid-template-rows: 1fr;
+                    grid-template-rows: 1fr 1fr;
                     grid-template-columns: 1fr 1fr;
                 }
 
@@ -475,22 +502,31 @@
         </section>
 
         <section class="dark row2">
-            <div>
+        
+            <div class="img-bk box-txt" id="img-bk1">
                 <h1>What do we do ?</h1>
                 <p>Il Nostro Obbiettivo è Lo Sviluppo Di Un Sito Che Semplifichi Alle Persone </p>    
             </div>
             
-            <div>
+            <div class="img-bk box-txt" id="img-bk2">
                 <p>Il Nostro Obbiettivo è Lo Sviluppo Di Un Sito Che Semplifichi Alle Persone </p>    
             </div>
-            </section>
+            <div class="img-bk box-txt" id="img-bk3">
+                <h1>What do we do ?</h1>
+                <p>Il Nostro Obbiettivo è Lo Sviluppo Di Un Sito Che Semplifichi Alle Persone </p>    
+            </div>
+            
+            <div class="img-bk box-txt" id="img-bk4">
+                <p>Il Nostro Obbiettivo è Lo Sviluppo Di Un Sito Che Semplifichi Alle Persone </p>    
+            </div>
+        </section>
 
         <script>
 
             document.addEventListener('DOMContentLoaded', () => {
 
                 // WebApp version
-                const version = '0.5.1'
+                const version = '0.5.2'
                 console.log(`@APP v${version}`)
 
                 const btnThemeDark = document.getElementById('btn-theme-dark')
